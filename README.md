@@ -1,2 +1,2 @@
 # poo--1719110177
-programación orientada a objeto 
+programación orientada a objetos
