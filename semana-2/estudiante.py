@@ -43,5 +43,3 @@ objeto.calificar()
 objeto.reinscribirse()
 objeto.pagar()
 objeto._init_()
-
-
