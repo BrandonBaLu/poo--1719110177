@@ -1,22 +1,34 @@
-class Aztca:
+class Banco:
 
-  """Atríbutos"""
-  cajeros= 10
-  ventanillas= 10
-  personal= 30
-  sillas= 24
-  maquina_de_turnos=1
-  pantallas=3
-  bocinas=3
-  oficinas=10
-  computadoras=20
-  impresoras=2
+  cajeros= 5
+  ventanillas= 7
+  empleados= 30
+  camarasseguridad= 10
+  alarmas= 3
+  sucursales= 6
+  oficinas= 6
+ 
   
-  """Métodos"""
-  def crearcuentas():
-    print("crear cuentas bancarias")
-    print("ahorrar")
-    print("depositar")
-    print("retirar")
-    print("pagar servicios")
+  def servicioBanacario(self):
+    print("servicioBanacario")
+  def prestamos(self):
+    print("prestamos")
+  def seguridad(self):
+    print("seguridad")
+
+  def __init__(self):
+    print("Banco Banamex")
+    print(self.cajeros)
+    print(self.ventanillas)
+    print(self.empleados)
+    print(self.camarasseguridad)
+    print(self.alarmas)
+    print(self.sucursales)
+    print(self.oficinas)
+    
+objeto = Banco()
+objeto.servicioBanacario()
+objeto.seguridad()
+objeto.prestamos()
+
 
