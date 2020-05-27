@@ -3,7 +3,7 @@ class calculadora:
   multiplicacion="multiplicacion"
   teclas= 50
   tipo= "cientifica"
-  modelo= "STR25"
+  modelo= "126Clc"
   marca= "CASIO"
   tama= "grande"
   forma="rectangular"
