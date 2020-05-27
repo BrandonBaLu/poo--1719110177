@@ -3,7 +3,7 @@ class calculadora:
   multiplicacion="multiplicacion"
   teclas= 50
   tipo= "cientifica"
-  Modelo= "STR25"
+  modelo= "STR25"
   marca= "CASIO"
   tama= "grande"
   forma="rectangular"
@@ -22,8 +22,8 @@ class calculadora:
   
   def _init_(self):
     print("Calculadora Cientifica")
-    print("funciones"+ str(self.funciones))
-    print(self.multiplicacion)
+    print("funciones: "+ str(self.funciones))
+    print("Realiza: "+str(self.multiplicacion))
     print(self.teclas)
     print(self.tipo)
     print(self.modelo)
@@ -37,4 +37,4 @@ objeto.prender
 objeto.multiplica
 objeto.sumar
 objeto.restar
-objeto._init_
+objeto._init_()
