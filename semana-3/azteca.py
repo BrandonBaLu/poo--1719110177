@@ -31,6 +31,11 @@ class azteca(banco):
   
   def __init__(self):
     print("constructor de banco Azteca")
+    print("cajeros= "+str(self.cajeros))
+    print("personal= "+str(self.personal))
+    print("sillas= "+str(self.sillas))
+    print("pantallas llama turnos= "+str(self.pantallas_llama_turnos))
+    print("ventanillas= "+str(self.ventanillas))
 
 
 
@@ -41,7 +46,7 @@ objeto.depositar()
 objeto_azteca = azteca()
 objeto_azteca.retirar()
 objeto_azteca.depositar()
-objeto_azteca.__init__()
+
 
 
   
