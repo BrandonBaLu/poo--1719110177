@@ -17,10 +17,10 @@ class banco:
     print("depositar")
     
     
-class azteca(banco):
-
-  def
-
+class azteca(banco):  
+  
+  def __init__(self):
+    
   
 
 
