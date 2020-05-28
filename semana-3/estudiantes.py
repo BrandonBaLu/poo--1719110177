@@ -1,33 +1,33 @@
 class estudiante:
    
   "atributos"
-  uniforme= 5
-  mochila = 30
-  sillas= 15
-  pantallas_llama_turnos= 4
-  ventanillas= 12
+  uniforme= 1
+  mochila = 1
+  libros= 6
+  libretas= 6
+  utiles= "lapices, lapiceros"
 
   "atributos" 
   def __init__(self):
-     print("Constructor de bancos")
-     print("cajeros= "+str(self.cajeros))
-     print("personal= "+str(self.personal))
-     print("sillas= "+str(self.sillas))
-     print("pantallas llama turnos= "+str(self.pantallas_llama_turnos))
-     print("ventanillas= "+str(self.ventanillas))
+     print("Constructor estudiante")
+     print("uniforme= "+str(self.uniforme))
+     print("mochila "+str(self.mochila))
+     print("libros= "+str(self.libros))
+     print("libretas= "+str(self.libretas))
+     print("utiles= "+str(self.utiles))
 
   
   
   "métodos"
-  def retirar(self):
-    print("retirar")
+  def estudiar(self):
+    print("estudiar")
 
-  def depositar(self):
-    print("depositar")
+  def leer(self):
+    print("leér")
     
     
 
-class azteca(banco):  
+class estudiante_prepa(estudiante):  
   
   def __init__(self):
     print("constructor de banco Azteca")
@@ -39,10 +39,10 @@ class azteca(banco):
 
 
 
-objeto = banco()
-objeto.retirar()
-objeto.depositar()
+objeto = estudiante()
+objeto.estudiar()
+objeto.leer()
 
-objeto_azteca = azteca()
-objeto_azteca.retirar()
-objeto_azteca.depositar()
+objeto_estudiante_prepa = estudiante_prepa()
+objeto_estudiante_prepa.estudiar()
+objeto_estudiante_prepa.leer()
