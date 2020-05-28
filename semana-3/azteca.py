@@ -38,9 +38,9 @@ objeto.retirar()
 objeto.depositar()
 
 objeto_azteca=azteca()
-objeto_azteca.retirar
+objeto_azteca.retirar()
 objeto.depositar()
-objeto.__init__()
+
 
   
 
