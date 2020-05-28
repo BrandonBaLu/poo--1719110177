@@ -25,7 +25,7 @@ class banco:
 
 class azteca(banco):
   """atríbutos"""
-  def abierto_tarde="10 pm"
+  abierto_tarde="10 pm":
   entrega="entrega inmediata"
 
 
