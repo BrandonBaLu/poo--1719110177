@@ -32,14 +32,11 @@ class azteca(banco):
 elektra=azteca()
 
 
-
-objeto = banco()
-objeto.retirar()
-objeto.depositar()
-
-objeto_azteca = azteca()
-objeto_azteca.retirar()
-objeto_azteca.depositar()
+print(elektra.cajeros)
+print(elektra.personal)
+print(elektra.sillas)
+print(elektra.pantalla_llama_turnos)
+print(elektra.ventanillas)
 
 
 
