@@ -7,7 +7,7 @@ class banco:
    pantallas_llama_turnos= 4
    ventanillas= 12
    
-   def __init__(self):
+  def __init__(self):
      print("Constructor de bancos")
 
   def retirar(self):
