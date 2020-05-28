@@ -1,4 +1,4 @@
-class banco:
+class estudiante:
    
   "atributos"
   cajeros= 5
