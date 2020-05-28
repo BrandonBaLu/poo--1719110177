@@ -26,6 +26,7 @@ class banco:
     print("depositar")
     
     
+
 class azteca(banco):  
   
   def __init__(self):
@@ -33,13 +34,14 @@ class azteca(banco):
 
 
 
-objeto=banco()
+objeto = banco()
 objeto.retirar()
 objeto.depositar()
 
-objeto_azteca=azteca()
+objeto_azteca = azteca()
 objeto_azteca.retirar()
-objeto.depositar()
+objeto_azteca.depositar()
+objeto_azteca.__init__()
 
 
   
