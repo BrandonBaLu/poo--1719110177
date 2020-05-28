@@ -1,21 +1,11 @@
 class banco:
    
-  "atributos"
+  "atríbutos"
   cajeros= 5
   personal= 30
   sillas= 15
   pantallas_llama_turnos= 4
   ventanillas= 12
-
-  "atributos" 
-  def __init__(self):
-     print("Constructor de bancos")
-     print("cajeros= "+str(self.cajeros))
-     print("personal= "+str(self.personal))
-     print("sillas= "+str(self.sillas))
-     print("pantallas llama turnos= "+str(self.pantallas_llama_turnos))
-     print("ventanillas= "+str(self.ventanillas))
-
   
   
   "métodos"
@@ -24,18 +14,22 @@ class banco:
 
   def depositar(self):
     print("depositar")
+
+  
+  def __init__(self):
+    pass
+
+    
     
     
 
-class azteca(banco):  
-  
-  def __init__(self):
-    print("constructor de banco Azteca")
-    print("cajeros= "+str(self.cajeros))
-    print("personal= "+str(self.personal))
-    print("sillas= "+str(self.sillas))
-    print("pantallas llama turnos= "+str(self.pantallas_llama_turnos))
-    print("ventanillas= "+str(self.ventanillas))
+class azteca(banco):
+  """atríbutos"""
+  def abierto_tarde="10 pm"
+  entrega="entrega inmediata"
+
+
+elektra=azteca()
 
 
 
