@@ -8,7 +8,7 @@ class banco:
    ventanillas= 12
    
    def __init__(self):
-     print("Constructur de bancos")
+     print("Constructor de bancos")
 
   def retirar(self):
     print("retirar")
@@ -20,7 +20,16 @@ class banco:
 class azteca(banco):  
   
   def __init__(self):
-    
+    print("constructor de banco Azteca" )
+
+objeto=banco
+objeto.retirar
+objeto.depositar
+
+
+objeto=azteca()
+
+
   
 
 
