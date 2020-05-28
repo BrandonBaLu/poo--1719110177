@@ -22,7 +22,7 @@ class azteca(banco):
   def __init__(self):
     print("constructor de banco Azteca" )
 
-objeto=banco()
+objeto=estudiante()
 objeto.retirar()
 objeto.depositar()
 
