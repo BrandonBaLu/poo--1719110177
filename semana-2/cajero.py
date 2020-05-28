@@ -1,4 +1,4 @@
-class futbolista:
+  class futbolista:
   funciones= 22
   gabeta= "si"
   gabeta_billetes= 1
