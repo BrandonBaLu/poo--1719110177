@@ -40,7 +40,7 @@ class vacaciones_playa(vacaciones):
     print("constructor de vacaciones en la playa de la riviera maya ")
     pass
 
-riviera_maya = estudiante_prepa()
+riviera_maya = vacaciones_playa()
 
 print("juegos = "+str(riviera_maya.juegos_didacticos))
 print("familia = "+str(riviera_maya.familia))
