@@ -1,19 +1,19 @@
-class banco:
+class estudiante:
    
   "atríbutos"
-  cajeros= 5
-  personal= 30
-  sillas= 15
-  pantallas_llama_turnos= 4
-  ventanillas= 12
+  uniforme= 1
+  mochila = 1
+  libros= 6
+  libretas= 6
+  utiles= "lapices, lapiceros"
   
   #métodos
 
-  def retirar(self):
-    print("retirar")
+  def estudiar(self):
+    print("estudiar")
 
-  def depositar(self):
-    print("depositar")
+  def leer(self):
+    print("leér")
 
   
   def __init__(self):
@@ -21,25 +21,25 @@ class banco:
 
         
 
-class azteca(banco):
+class estudiante_prepa(estudiantes):
   
   #atríbutos
   
-  abierto_tarde="10 pm"
-  entrega="entrega inmediata"
+  estudian_algebra="estudian algebra"
+  carrera="carrera tecnica"
 
   #métodos
 
-  def  prestamos(self):
-    print("prestamos de forma inmediata")
+  def  dormir_tarde(self):
+    print("dormir tarde")
 
-  def abonos(self):
-    print("abonos pequeños semanales")
+  def trabajos(self):
+    print("proyectos")
 
   def __init__(self):
     pass
 
-elektra = azteca()
+CBTIS = estudiante_prepa()
 
 print("abierto hasta las= "+str(elektra.abierto_tarde))
 print(elektra.entrega)
@@ -49,7 +49,7 @@ print("sillas= "+str(elektra.sillas))
 print("pantallas llama turnos= "+str(elektra.pantallas_llama_turnos))
 print("ventanillas= "+str(elektra.ventanillas))
 
-elektra.retirar()
-elektra.depositar()
-elektra.prestamos()
-elektra.abonos()
+elektra.estudiar()
+elektra.leer()
+elektra.dormir_tarde()
+elektra.carrera()
