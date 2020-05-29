@@ -37,6 +37,7 @@ class azteca(banco):
     print("abonos pequeños semanales")
 
   def __init__(self):
+    print("constructor banco azteca")
     pass
 
 elektra = azteca()
