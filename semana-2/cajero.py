@@ -1,4 +1,4 @@
-  class futbolista:
+  class cajero:
   funciones= 22
   gabeta= "si"
   gabeta_billetes= 1
@@ -26,7 +26,7 @@
     print(self.depositar)
     print(self.nombre)
 
-objeto = futbolista()
+objeto = cajero()
 objeto.imprimir()
 objeto.cambio()
 objeto.servicios()
