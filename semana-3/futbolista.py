@@ -1,41 +1,41 @@
-class seriestv:
+class futbolista:
    
   "atríbutos"
-  accion= "series de aventuras disparos"
-  drama= "series de tristeza"
-  romance= "series de amor"
-  terror= "series de terror para los amantes a ello"
-  ciencia_ficcion= "series de fantasia"
+  edad= 22
+  altura= 1.80
+  camiseta= 1
+  posicion= "delantero"
+  categoria="juvenil"
   
   #métodos
 
-  def entretenerse(self):
-    print("matar el aburrimiento")
+  def correr(self):
+    print("correr")
   
   
-  def convivir(self):
-    print("convivir en familia viendo las series")
-
+  def saltar(self):
+    print("saltar")
   
   def __init__(self):
     pass
 
         
 
-class series_drama(seriestv):
+
+class futbolista_barcelona(futbolista):
   
   #atríbutos
   
-  emocion= "mucha emocion "
-  suspenso="suspenso"
+  messi= "Lionel Messi "
+  calidad="calidad de jugadores"
 
   #métodos
 
-  def actuar(self):
-    print("actuar")
+   def patear(self):
+    print("patear")
   
-  def grabar(self):
-    print("grabar")
+  def gol(self):
+    print("meter gol")
 
   def __init__(self):
     print("constructor de SexEducation ")
@@ -56,9 +56,32 @@ SexEducation.convivir()
 SexEducation.actuar()
 SexEducation.grabar()
 
-
-edad= 22
+class futbolista:
+  edad= 22
   altura= 1.80
   camiseta= 1
   posicion= "delantero"
   categoria="juvenil"
+  nombre= "Brandon BaLu"
+  
+  
+ 
+  def festejar(self):
+    print("festejar")
+ 
+  def _init_(self):
+    print("Futbolista")
+    print(self.edad)
+    print(self.altura)
+    print(self.camiseta)
+    print(self.posicion)
+    print(self.categoria)
+    print(self.nombre)
+
+objeto = futbolista()
+objeto.correr()
+objeto.saltar()
+objeto.patear()
+objeto.gol()
+objeto.festejar()
+objeto._init_()
