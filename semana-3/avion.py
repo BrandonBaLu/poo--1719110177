@@ -2,7 +2,7 @@ class avion:
    
   "atríbutos"
   alas= 2
-  acientos = 1
+  acientos = 416
   pilotos= 2
   volantes= 2
   ventanillas= 60
