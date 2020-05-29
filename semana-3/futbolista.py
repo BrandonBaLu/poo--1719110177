@@ -1,11 +1,11 @@
 class futbolista:
    
   "atríbutos"
-  edad= 22
+  edad= 30
   altura= 1.80
-  camiseta= 1
+  camiseta= 10
   posicion= "delantero"
-  categoria="juvenil"
+  categoria="libre"
   
   #métodos
 
@@ -26,62 +26,33 @@ class futbolista_barcelona(futbolista):
   
   #atríbutos
   
-  messi= "Lionel Messi "
+  plantilla_jugadores= "plantilla de jugadores "
   calidad="calidad de jugadores"
 
   #métodos
 
-   def patear(self):
+  def patear(self):
     print("patear")
   
   def gol(self):
-    print("meter gol")
+    print("meter goles")
 
   def __init__(self):
-    print("constructor de SexEducation ")
+    print("Lionel Messi ")
     pass
 
-SexEducation = series_drama()
+Messi = futbolista_barcelona()
 
-print("accion = "+str(SexEducation.accion))
-print("drama = "+str(SexEducation.drama))
-print("romance= "+str(SexEducation.romance))
-print("terror= "+str(SexEducation.terror))
-print(SexEducation.ciencia_ficcion)
-print(SexEducation.emocion)
-print(SexEducation.suspenso)
+print("edad = "+str(Messi.edad))
+print("altura = "+str(Messi.altura))
+print("camiseta= "+str(Messi.camiseta))
+print("posicion= "+str(Messi.posicion))
+print("categoria= "+str(Messi.categoria))
+print(Messi.plantilla_jugadores)
+print(Messi.calidad)
 
-SexEducation.entretenerse()
-SexEducation.convivir()
-SexEducation.actuar()
-SexEducation.grabar()
+Messi.correr()
+Messi.saltar()
+Messi.patear()
+Messi.gol()
 
-class futbolista:
-  edad= 22
-  altura= 1.80
-  camiseta= 1
-  posicion= "delantero"
-  categoria="juvenil"
-  nombre= "Brandon BaLu"
-  
-  
- 
-  def festejar(self):
-    print("festejar")
- 
-  def _init_(self):
-    print("Futbolista")
-    print(self.edad)
-    print(self.altura)
-    print(self.camiseta)
-    print(self.posicion)
-    print(self.categoria)
-    print(self.nombre)
-
-objeto = futbolista()
-objeto.correr()
-objeto.saltar()
-objeto.patear()
-objeto.gol()
-objeto.festejar()
-objeto._init_()
