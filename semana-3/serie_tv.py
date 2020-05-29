@@ -51,46 +51,7 @@ print(SexEducation.ciencia_ficcion)
 print(SexEducation.emocion)
 print(SexEducation.suspenso)
 
-SexEducation.relajarse()
-riviera_maya.descansar()
-riviera_maya.nadar()
-riviera_maya.bucear()
-
-
-
-
-class :
-  '''Atríbutos'''
-
-  
-  comedias= "tevenovelas para la familia"
-  reality= "series de reality show"
-  
-  favoritas= "lista de tus series favoritas"
-  descargas="descargar"
- 
-  '''Métodos'''
-  
-  
-  def peleas(self):
-    print("peleas ficticias")  
-
-  def _init_(self):
-    print("atributos de un alumno")
-    print(self.accion)
-    print(self.drama)
-    print(self.romance)
-    print(self.terror)
-    print(self.ciencia_ficcion)
-    print(self.comedias)
-    print(self.reality)
-    print(self.emocion)
-    print(self.favoritas)
-    print(self.descargas)
-objeto = seriestv()
-objeto.entretenerse()
-objeto.convivir()
-objeto.actuar()
-objeto.grabar()
-objeto.peleas()
-objeto._init_()
+SexEducation.entretenerse()
+SexEducation.convivir()
+SexEducation.actuar()
+SexEducation.grabar()
