@@ -25,7 +25,7 @@ class banco:
 
 class azteca(banco):
   """atríbutos"""
-  abierto_tarde="10 pm":
+  abierto_tarde="10 pm"
   entrega="entrega inmediata"
 
 
@@ -35,7 +35,7 @@ elektra=azteca()
 print(elektra.cajeros)
 print(elektra.personal)
 print(elektra.sillas)
-print(elektra.pantalla_llama_turnos)
+print(elektra.pantallas_llama_turnos)
 print(elektra.ventanillas)
 
 
