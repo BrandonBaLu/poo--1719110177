@@ -37,6 +37,7 @@ class estudiante_prepa(estudiante):
     print("proyectos")
 
   def __init__(self):
+    print("constructor estudiantes de preparatoria")
     pass
 
 CBTIS = estudiante_prepa()
