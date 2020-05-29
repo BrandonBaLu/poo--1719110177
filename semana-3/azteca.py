@@ -31,19 +31,25 @@ class azteca(banco):
 #métodos
 def  prestamos_inmediatos(self):
   print("prestamos de forma inmediata")
-def abonos_pequeños(self):
+def abonos_pequenos(self):
   print("abonos pequeños semanales")
 
+def __init__(self):
+  pass
 
 elektra = azteca()
 
 
-print(elektra.cajeros)
-print(elektra.personal)
-print(elektra.sillas)
-print(elektra.pantallas_llama_turnos)
-print(elektra.ventanillas)
+print("cajeros= "+str(elektra.cajeros))
+print("personal= "+str(elektra.personal))
+print("sillas= "+str(elektra.sillas))
+print("pantallas llama turnos= "+str(elektra.pantallas_llama_turnos))
+print("ventanillas= "+str(elektra.ventanillas))
 
+elektra.retitar()
+elektra.depositar()
+elektra.prestamos_inmediatos()
+elektra.abonos_pequenos()
 
 
   
