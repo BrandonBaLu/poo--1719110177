@@ -37,20 +37,20 @@ class vacaciones_playa(vacaciones):
     print("algun juego emocionante para tí"")
 
   def __init__(self):
-    print("constructor estudiantes de preparatoria")
+    print("constructor de vacaciones en la playa")
     pass
 
-CBTIS = estudiante_prepa()
+riviera_maya = estudiante_prepa()
 
-print("Uniforme= "+str(CBTIS.uniforme))
-print("mochila= "+str(CBTIS.mochila))
-print("libros= "+str(CBTIS.libros))
-print("libretas= "+str(CBTIS.libretas))
-print("utiles= "+str(CBTIS.utiles))
-print(CBTIS.estudian_algebra)
-print(CBTIS.carrera)
+print("Uniforme= "+str(riviera_maya.uniforme))
+print("mochila= "+str(riviera_maya.mochila))
+print("libros= "+str(riviera_maya.libros))
+print("libretas= "+str(riviera_maya.libretas))
+print("utiles= "+str(riviera_maya.utiles))
+print(riviera_maya.estudian_algebra)
+print(riviera_maya.carrera)
 
-CBTIS.estudiar()
-CBTIS.leer()
-CBTIS.dormir_tarde()
-CBTIS.trabajos()
+riviera_maya.estudiar()
+riviera_maya.leer()
+riviera_maya.dormir_tarde()
+riviera_maya.trabajos()
