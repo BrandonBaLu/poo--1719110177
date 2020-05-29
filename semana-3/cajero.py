@@ -60,59 +60,37 @@ casio_126Clc.graficar()
 casio_126Clc.dividir()
 
 
-class banco:
-   
-  "atríbutos"
-  cajeros= 5
-  personal= 30
-  sillas= 15
-  pantallas_llama_turnos= 4
-  ventanillas= 12
+  class cajero:
+  funciones= 22
+  gabeta= "si"
+  gabeta_billetes= 1
+  retirar= "cantidad a retirar"
+  depositar="juvenil"
+  nombre= "Brandon BaLu"
   
-  #métodos
+  def imprimir(self):
+    print("imprime")
+  def cambio(self):
+    print("cambiar dinero")
+  def servicios(self):
+    print("abre gabeta")
+  def pagar(self):
+    print("cierra gabeta")
+  def resivir(self):
+    print("contar dinero")
+ 
+  def _init_(self):
+    print("Futbolista")
+    print(self.funciones)
+    print(self.gabeta)
+    print(self.gabeta_billetes)
+    print(self.retirar)
+    print(self.depositar)
+    print(self.nombre)
 
-  def retirar(self):
-    print("retirar")
-
-  def depositar(self):
-    print("depositar")
-
-  
-  def __init__(self):
-    pass
-
-        
-
-class azteca(banco):
-  
-  #atríbutos
-  
-  abierto_tarde="10 pm"
-  entrega="entrega inmediata"
-
-  #métodos
-
-  def  prestamos(self):
-    print("prestamos de forma inmediata")
-
-  def abonos(self):
-    print("abonos pequeños semanales")
-
-  def __init__(self):
-    print("constructor banco azteca")
-    pass
-
-elektra = azteca()
-
-print("abierto hasta las= "+str(elektra.abierto_tarde))
-print(elektra.entrega)
-print("cajeros= "+str(elektra.cajeros))
-print("personal= "+str(elektra.personal))
-print("sillas= "+str(elektra.sillas))
-print("pantallas llama turnos= "+str(elektra.pantallas_llama_turnos))
-print("ventanillas= "+str(elektra.ventanillas))
-
-elektra.retirar()
-elektra.depositar()
-elektra.prestamos()
-elektra.abonos()
+objeto = cajero()
+objeto.imprimir()
+objeto.cambio()
+objeto.servicios()
+objeto.pagar()
+objeto.resivir()

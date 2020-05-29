@@ -3,7 +3,7 @@
   gabeta= "si"
   gabeta_billetes= 1
   retirar= "cantidad a retirar"
-  depositar="juvenil"
+  depositar="cantidad a depositar"
   nombre= "Brandon BaLu"
   
   def imprimir(self):
