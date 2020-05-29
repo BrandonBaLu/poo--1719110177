@@ -2,16 +2,16 @@ class calculadora:
 
    
   "atríbutos"
-  cajeros= 5
-  personal= 30
-  sillas= 15
-  pantallas_llama_turnos= 4
-  ventanillas= 12
+  funciones= "funciones"
+  multiplicacion="multiplicacion"
+  teclas= 50
+  tipo= "cientifica"
+  forma="rectangular"
   
   #métodos
 
-  def retirar(self):
-    print("retirar")
+  def prender(self):
+    print("Encender")
 
   def depositar(self):
     print("depositar")
@@ -22,64 +22,55 @@ class calculadora:
 
         
 
-class azteca(banco):
+class casio(calculadora):
   
   #atríbutos
   
-  abierto_tarde="10 pm"
-  entrega="entrega inmediata"
+  tamaño= "grande"
+  color="roja"
 
   #métodos
 
-  def  prestamos(self):
-    print("prestamos de forma inmediata")
-
-  def abonos(self):
-    print("abonos pequeños semanales")
-
-  def __init__(self):
-    print("constructor banco azteca")
-    pass
-
-elektra = azteca()
-
-print("abierto hasta las= "+str(elektra.abierto_tarde))
-print(elektra.entrega)
-print("cajeros= "+str(elektra.cajeros))
-print("personal= "+str(elektra.personal))
-print("sillas= "+str(elektra.sillas))
-print("pantallas llama turnos= "+str(elektra.pantallas_llama_turnos))
-print("ventanillas= "+str(elektra.ventanillas))
-
-elektra.retirar()
-elektra.depositar()
-elektra.prestamos()
-elektra.abonos()
-
-  
-  
-  
-  
-  funciones= 500
-  multiplicacion="multiplicacion"
-  teclas= 50
-  tipo= "cientifica"
-  modelo= "126Clc"
-  marca= "CASIO"
-  tama= "grande"
-  forma="rectangular"
-  color="roja"
-  '''metodos'''
-  def prender(self):
-    print("Encender")
-  def multiplica(self):
-    print("multiplica") 
   def sumar(self):
     print("sumar")
+  
   def restar(self):
     print("restar")
-  def apagar(self):
-    print("Apagado automatico")
+
+  def __init__(self):
+    print("constructor calculadora casio 126Clc")
+    pass
+
+casio_126Clc = casio()
+
+print("abierto hasta las= "+str(casio_126Clc.abierto_tarde))
+print(casio_126Clc.entrega)
+print("cajeros= "+str(casio_126Clc.cajeros))
+print("personal= "+str(casio_126Clc.personal))
+print("sillas= "+str(casio_126Clc.sillas))
+print("pantallas llama turnos= "+str(casio_126Clc.pantallas_llama_turnos))
+print("ventanillas= "+str(casio_126Clc.ventanillas))
+
+casio_126Clc=calculadora()
+casio_126Clc.prender
+casio_126Clc.multiplica
+casio_126Clc.sumar
+casio_126Clc.restar
+
+  
+  
+  
+  
+  
+  modelo= "126Clc"
+  marca= "CASIO"
+  
+  '''metodos'''
+  
+  def multiplica(self):
+    print("multiplica") 
+  
+  
   
   def _init_(self):
     print("Calculadora Cientifica")
@@ -93,9 +84,3 @@ elektra.abonos()
     print(self.forma)
     print(self.color)
     
-objeto=calculadora()
-objeto.prender
-objeto.multiplica
-objeto.sumar
-objeto.restar
-objeto._init_()
