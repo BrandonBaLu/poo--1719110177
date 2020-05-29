@@ -31,14 +31,14 @@ class casio(calculadora):
 
   #métodos
   
-  def  sumar(self):
-    print("sumar")
-
-  def restar(self):
-    print("restar")
+  def  graficar(self):
+    print("graficar")
+    
+  def dividir(self):
+    print("dividir")
 
   def __init__(self):
-    print("constructor de un avíon Boeing 747")
+    print("constructor de calculadora casio_126Clc")
     pass
 
 casio_126Clc = casio()
@@ -51,9 +51,13 @@ print("forma "+str(casio_126Clc.forma))
 print("funciones casio 126Clc= "+str(casio_126Clc.funciones_c))
 print("color= "+str(casio_126Clc.color))
 
-casio_126Clc=calculadora()
+
+
+casio_126Clc=casio()
 casio_126Clc.prender()
 casio_126Clc.apagar()
-casio_126Clc.restar()
-casio_126lc.sumar()
+casio_126Clc.graficar()
+casio_126Clc.dividir()
+
+
 
