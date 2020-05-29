@@ -46,7 +46,7 @@ print("sillas= "+str(elektra.sillas))
 print("pantallas llama turnos= "+str(elektra.pantallas_llama_turnos))
 print("ventanillas= "+str(elektra.ventanillas))
 
-elektra.retitar()
+elektra.retirar()
 elektra.depositar()
 elektra.prestamos_inmediatos()
 elektra.abonos_pequenos()
