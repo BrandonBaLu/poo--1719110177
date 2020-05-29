@@ -1,48 +1,55 @@
-class estudiante:
+class banco:
    
-  "atributos"
-  uniforme= 1
-  mochila = 1
-  libros= 6
-  libretas= 6
-  utiles= "lapices, lapiceros"
-
-  "atributos" 
-  def __init__(self):
-     print("Constructor estudiante")
-     print("uniforme= "+str(self.uniforme))
-     print("mochila "+str(self.mochila))
-     print("libros= "+str(self.libros))
-     print("libretas= "+str(self.libretas))
-     print("utiles= "+str(self.utiles))
-
+  "atríbutos"
+  cajeros= 5
+  personal= 30
+  sillas= 15
+  pantallas_llama_turnos= 4
+  ventanillas= 12
   
-  
-  "métodos"
-  def estudiar(self):
-    print("estudiar")
+  #métodos
 
-  def leer(self):
-    print("leér")
-    
-    
+  def retirar(self):
+    print("retirar")
 
-class estudiante_prepa(estudiante):  
+  def depositar(self):
+    print("depositar")
+
   
   def __init__(self):
-    print("constructor de banco Azteca")
-    print("cajeros= "+str(self.cajeros))
-    print("personal= "+str(self.personal))
-    print("sillas= "+str(self.sillas))
-    print("pantallas llama turnos= "+str(self.pantallas_llama_turnos))
-    print("ventanillas= "+str(self.ventanillas))
+    pass
 
+        
 
+class azteca(banco):
+  
+  #atríbutos
+  
+  abierto_tarde="10 pm"
+  entrega="entrega inmediata"
 
-objeto = estudiante()
-objeto.estudiar()
-objeto.leer()
+  #métodos
 
-objeto_estudiante_prepa = estudiante_prepa()
-objeto_estudiante_prepa.estudiar()
-objeto_estudiante_prepa.leer()
+  def  prestamos(self):
+    print("prestamos de forma inmediata")
+
+  def abonos(self):
+    print("abonos pequeños semanales")
+
+  def __init__(self):
+    pass
+
+elektra = azteca()
+
+print("abierto hasta las= "+str(elektra.abierto_tarde))
+print(elektra.entrega)
+print("cajeros= "+str(elektra.cajeros))
+print("personal= "+str(elektra.personal))
+print("sillas= "+str(elektra.sillas))
+print("pantallas llama turnos= "+str(elektra.pantallas_llama_turnos))
+print("ventanillas= "+str(elektra.ventanillas))
+
+elektra.retirar()
+elektra.depositar()
+elektra.prestamos()
+elektra.abonos()
