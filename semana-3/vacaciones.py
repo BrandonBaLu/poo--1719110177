@@ -25,32 +25,32 @@ class vacaciones_playa(vacaciones):
   
   #atríbutos
   
-  trajes_de_baño="estudian algebra"
-  caminar="caminar en la arena"
+  trajes_de_baño="trajes de baño"
+  animales_marinos="tiburones, delphines"
 
   #métodos
 
-  def  divertirse(self):
-    print("crear actividades divertidas")
+  def  nadar(self):
+    print("nadar")
  
-  def jugar(self):
-    print("algun juego emocionante para tí"")
+  def bucear(self):
+    print("bucear")
 
   def __init__(self):
-    print("constructor de vacaciones en la playa")
+    print("constructor de vacaciones en la playa de la riviera maya ")
     pass
 
 riviera_maya = estudiante_prepa()
 
-print("Uniforme= "+str(riviera_maya.uniforme))
-print("mochila= "+str(riviera_maya.mochila))
-print("libros= "+str(riviera_maya.libros))
-print("libretas= "+str(riviera_maya.libretas))
-print("utiles= "+str(riviera_maya.utiles))
-print(riviera_maya.estudian_algebra)
-print(riviera_maya.carrera)
+print("juegos = "+str(riviera_maya.juegos_didacticos))
+print("familia = "+str(riviera_maya.familia))
+print("lugares relajantes= "+str(riviera_maya.lugares_relajantes))
+print("comidas en familia= "+str(riviera_maya.comidas_en_familia))
+print(riviera_maya.gastronomia)
+print(riviera_maya.trajes_de_baño)
+print(riviera_maya.animales_marinos)
 
-riviera_maya.estudiar()
-riviera_maya.leer()
-riviera_maya.dormir_tarde()
-riviera_maya.trabajos()
+riviera_maya.relajarse()
+riviera_maya.descansar()
+riviera_maya.nadar()
+riviera_maya.bucear()
