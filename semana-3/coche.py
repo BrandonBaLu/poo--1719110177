@@ -1,9 +1,9 @@
 class coche:
    
   "atríbutos"
-  puertas=4
-  capasidad= 5
-  asientos=6
+  puertas= 4
+  capacidad= 10
+  asientos= 6
   color= "AMARILLO"
   aire= "con aire acondicionado"
   
@@ -21,73 +21,36 @@ class coche:
 
         
 
-class Boeing(avion):
+class Grand_cheroke(coche):
   
   #atríbutos
   
-  Capacidad_de_pasajeros= 416.
-  longitud= "70,66 m."
+  volante= "volantes con cruice and set"
+  frenos="frenos de aire"
 
   #métodos
 
   def  velocidad_maxima(self):
-    print("Velocidad máxima: 528 nudos")
+    print("Velocidad máxima: 200 km/h")
 
-  def transportarse(self):
-    print("transportarse")
+  def arrancar_control(self):
+    print("arrancar a control remoto")
 
   def __init__(self):
-    print("constructor de un avíon Boeing 747")
+    print("constructor de Grand Cherokee 2004")
     pass
 
-cheroke_2004 = Boeing()
+cheroke_2004 = Grand_cheroke()
 
-print("alas= "+str(cheroke_2004.alas))
-print("acientos= "+str(cheroke_2004.acientos))
-print("pilotos= "+str(cheroke_2004.pilotos))
-print("libretas= "+str(cheroke_2004.volantes))
-print("ventanillas= "+str(cheroke_2004.ventanillas))
-print("Capacidad de pasajeros= "+str(cheroke_2004.Capacidad_de_pasajeros))
-print("longitud= "+str(cheroke_2004.longitud))
+print("puertas= "+str(cheroke_2004.puertas))
+print("capacidad= "+str(cheroke_2004.capacidad))
+print("asientos= "+str(cheroke_2004.asientos))
+print("color= "+str(cheroke_2004.color))
+print(cheroke_2004.aire)
+print("volante= "+str(cheroke_2004.volante))
+print("frenos= "+str(cheroke_2004.frenos))
+
 cheroke_2004.encender()
 cheroke_2004.apagar()
 cheroke_2004.velocidad_maxima()
-cheroke_2004.transportarse()
-
-class coche:
-  placas= "hkk5846"
-  modelo=2005
-  
-  rines= "rines modernos"
-  frenos="frenos de disco"
-  llantas=" 4 llantas"
-
-  def arrancar(self):
-    print("Arrancar")
-  def acelerar(self):
-    print(acelerar)
-  def frenar(self):
-    print("Frenar")
-  def conbustible(self):
-    print("gasolina")
-  def apagar(self):
-    print("apagar") 
-  
-  def _init_(self):
-    print("GMC")
-    print("placas="+str(self.placas))
-    print("modelo="+str(self.modelo))
-    print("puertas="+ str(self.puertas))
-    print("capacidad="+ str(self.capasidad))
-    print(self.asientos)
-    print("color="+str(self.color))
-    print(self.aire)
-    print(self.rines)
-    print(self.frenos)
-    print("No. de llantas="+str(self.llantas))
-
-objeto =coche()
-objeto.arrancar()
-objeto.frenar()
-objeto.conbustible()
-objeto._init_()
+cheroke_2004.arrancar_control()
