@@ -9,12 +9,14 @@ class classroom:
   
   #métodos
 
-  def prender(self):
-    print("Encender")
-
-  def apagar(self):
-    print("apagar")
-
+  def Ver_calificacion(self):
+   print("calificar")
+  
+  def Compartir_archivos(self):
+   print("Compartir ")
+  
+  def Comentar(self):
+   print("Comentar")
   
   def __init__(self):
     pass
@@ -30,17 +32,17 @@ class classrom_salvador(classroom):
 
   #métodos
   
-  def  graficar(self):
-    print("graficar")
-    
-  def dividir(self):
-    print("dividir")
+  def Entregar(self): 
+   print("Entregar")
+  
+  def Publicar_tarea(self):
+   print("Publicar Tareas")
 
   def __init__(self):
-    print("constructor de calculadora casio_126Clc")
+    print("constructor classrom POO")
     pass
 
-casio_126Clc = casio()
+classroom_poo = classrom_salvador()
 
 print(casio_126Clc.funciones)
 print(casio_126Clc.multiplicacion)
@@ -50,27 +52,17 @@ print("forma "+str(casio_126Clc.forma))
 print("funciones casio 126Clc= "+str(casio_126Clc.funciones_c))
 print("color= "+str(casio_126Clc.color))
 
-
-
-casio_126Clc=casio()
-casio_126Clc.prender()
-casio_126Clc.apagar()
-casio_126Clc.graficar()
-casio_126Clc.dividir()
+classroom_poo.Entregar()
+classroom_poo.Publicar_tarea()
+classroom_poo.Ver_calificacion()
+classroom_poo.Compartir_archivos()
+classroom_poo.Comentar()
  
  
 
  '''Metodos'''
- def Entregar(self): 
-   print("Entregar")
- def Publicar_tarea(self):
-   print("Publicar Tareas")
- def Ver_calificacion(self):
-   print("calificar")
- def Compartir_archivos(self):
-   print("Compartir ")
- def Comentar(self):
-   print("Comentar")
+ 
+ 
  
  def _init_(self):
    print("Color: "+str(self.Color))
@@ -82,10 +74,4 @@ casio_126Clc.dividir()
    print("nombre del alumno:"+ str(self.nombre_del_alumno))
 
 
-objeto=classroom()
-objeto._init_()
-objeto.Entregar()
-objeto.Publicar_tarea()
-objeto.Ver_calificacion()
-objeto.Compartir_archivos()
-objeto.Comentar()
+
