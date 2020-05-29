@@ -28,16 +28,16 @@ class azteca(banco):
   abierto_tarde="10 pm"
   entrega="entrega inmediata"
 
-#métodos
+  #métodos
 
-def  prestamos_inmediatos(self):
-  print("prestamos de forma inmediata")
+  def  prestamos(self):
+    print("prestamos de forma inmediata")
 
-def abonos_pequenos(self):
-  print("abonos pequeños semanales")
+  def abonos(self):
+    print("abonos pequeños semanales")
 
-def __init__(self):
-  pass
+  def __init__(self):
+    pass
 
 elektra = azteca()
 
@@ -51,8 +51,8 @@ print("ventanillas= "+str(elektra.ventanillas))
 
 elektra.retirar()
 elektra.depositar()
-elektra.prestamos_inmediatos()
-elektra.abonos_pequenos()
+elektra.prestamos()
+elektra.abonos()
 
 
   
