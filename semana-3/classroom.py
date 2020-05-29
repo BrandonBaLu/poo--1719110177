@@ -44,13 +44,14 @@ class classrom_salvador(classroom):
 
 classroom_poo = classrom_salvador()
 
-print(casio_126Clc.funciones)
-print(casio_126Clc.multiplicacion)
-print("teclas= "+str(casio_126Clc.teclas))
-print("tipo= "+str(casio_126Clc.tipo))
-print("forma "+str(casio_126Clc.forma))
-print("funciones casio 126Clc= "+str(casio_126Clc.funciones_c))
-print("color= "+str(casio_126Clc.color))
+print("Color: "+str(classroom_poo.Color))
+   print("Correo: "+str(classroom_poo.Correo))
+   print("Institucion: "+str(classroom_poo.Institucion))
+   print("Numero de tareas: "+str(classroom_poo.Numero_tareas))
+   print("Publicacion de tarea: "+str(classroom_poo.Publicacion_tarea))
+   print("Fecha de entrega: "+str(sclassroom_poo.Fecha_entrega))
+   print("nombre del alumno:"+ str(classroom_poo.nombre_del_alumno))
+
 
 classroom_poo.Entregar()
 classroom_poo.Publicar_tarea()
@@ -58,20 +59,11 @@ classroom_poo.Ver_calificacion()
 classroom_poo.Compartir_archivos()
 classroom_poo.Comentar()
  
- 
 
- '''Metodos'''
  
  
  
- def _init_(self):
-   print("Color: "+str(self.Color))
-   print("Correo: "+str(self.Correo))
-   print("Institucion: "+str(self.Institucion))
-   print("Numero de tareas: "+str(self.Numero_tareas))
-   print("Publicacion de tarea: "+str(self.Publicacion_tarea))
-   print("Fecha de entrega: "+str(self.Fecha_entrega))
-   print("nombre del alumno:"+ str(self.nombre_del_alumno))
-
+ 
+   
 
 
