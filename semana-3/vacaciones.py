@@ -1,10 +1,10 @@
 class vacaciones:
    
   "atríbutos"
-  jugar= "con la familia"
-  trajes de baño= 15
+  juegos_didacticos="juegos didacticos"
+  familia= "personas con quien disfrutes estar"
   lugares_relajantes= "en lugares relajantes"
-  divertirse= "crear actividades divertidas"
+  comidas_en_familia="comer con la familia"
   gastronomia= "comidas tipicas del lugar"
   
   #métodos
@@ -21,20 +21,20 @@ class vacaciones:
 
         
 
-class estudiante_prepa(estudiante):
+class vacaciones_playa(vacaciones):
   
   #atríbutos
   
-  estudian_algebra="estudian algebra"
-  carrera="carrera tecnica"
+  trajes_de_baño="estudian algebra"
+  caminar="caminar en la arena"
 
   #métodos
 
-  def  dormir_tarde(self):
-    print("dormir tarde")
-
-  def trabajos(self):
-    print("proyectos")
+  def  divertirse(self):
+    print("crear actividades divertidas")
+ 
+  def jugar(self):
+    print("algun juego emocionante para tí"")
 
   def __init__(self):
     print("constructor estudiantes de preparatoria")
