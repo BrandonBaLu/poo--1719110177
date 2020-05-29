@@ -7,8 +7,8 @@ class banco:
   pantallas_llama_turnos= 4
   ventanillas= 12
   
-  
-  "métodos"
+  #métodos
+
   def retirar(self):
     print("retirar")
 
@@ -23,14 +23,16 @@ class banco:
 
 class azteca(banco):
   
-  """atríbutos"""
+  #atríbutos
   
   abierto_tarde="10 pm"
   entrega="entrega inmediata"
 
 #métodos
+
 def  prestamos_inmediatos(self):
   print("prestamos de forma inmediata")
+
 def abonos_pequenos(self):
   print("abonos pequeños semanales")
 
@@ -39,7 +41,8 @@ def __init__(self):
 
 elektra = azteca()
 
-
+print("abierto hasta las"+str(elektra.abierto_tarde))
+print(elektra.entrega)
 print("cajeros= "+str(elektra.cajeros))
 print("personal= "+str(elektra.personal))
 print("sillas= "+str(elektra.sillas))
