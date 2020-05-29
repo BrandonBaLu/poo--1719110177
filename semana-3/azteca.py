@@ -19,17 +19,23 @@ class banco:
   def __init__(self):
     pass
 
-    
-    
-    
+        
 
 class azteca(banco):
+  
   """atríbutos"""
+  
   abierto_tarde="10 pm"
   entrega="entrega inmediata"
 
+#métodos
+def  prestamos_inmediatos(self):
+  print("prestamos de forma inmediata")
+def abonos_pequeños(self):
+  print("abonos pequeños semanales")
 
-elektra=azteca()
+
+elektra = azteca()
 
 
 print(elektra.cajeros)
