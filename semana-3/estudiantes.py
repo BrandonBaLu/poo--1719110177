@@ -41,15 +41,15 @@ class estudiante_prepa(estudiantes):
 
 CBTIS = estudiante_prepa()
 
-print("abierto hasta las= "+str(elektra.abierto_tarde))
-print(elektra.entrega)
-print("cajeros= "+str(elektra.cajeros))
-print("personal= "+str(elektra.personal))
-print("sillas= "+str(elektra.sillas))
-print("pantallas llama turnos= "+str(elektra.pantallas_llama_turnos))
-print("ventanillas= "+str(elektra.ventanillas))
+print("Uniforme= "+str(CBTIS.abierto_tarde))
+print("mochila= "+str( CBTIS.mochila))
+print("libros= "+str(elektra.libros))
+print("libretas= "+str(elektra.libretas))
+print("utiles= "+str(elektra.utiles))
+print(CBTIS.estudian_algebra
+print(CBTIS.carrera)
 
-elektra.estudiar()
-elektra.leer()
-elektra.dormir_tarde()
+CBTIS.estudiar()
+CBTIS.leer()
+CBTIS.dormir_tarde()
 elektra.carrera()
