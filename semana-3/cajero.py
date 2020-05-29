@@ -23,7 +23,7 @@ class cajero:
 
         
 
-class casio(calculadora):
+class cajeros(cajero):
   
   #atríbutos
   
@@ -42,7 +42,7 @@ class casio(calculadora):
     print("constructor de calculadora casio_126Clc")
     pass
 
-cajero_BBVA = casio()
+cajero_BBVA = cajeros()
 
 print(cajero_BBVA .funciones)
 print("gabeta "+str(cajero_BBVA .gabeta))
