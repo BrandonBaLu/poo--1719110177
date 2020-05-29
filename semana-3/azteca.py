@@ -41,7 +41,7 @@ def __init__(self):
 
 elektra = azteca()
 
-print("abierto hasta las"+str(elektra.abierto_tarde))
+print("abierto hasta las= "+str(elektra.abierto_tarde))
 print(elektra.entrega)
 print("cajeros= "+str(elektra.cajeros))
 print("personal= "+str(elektra.personal))
