@@ -21,7 +21,7 @@ class estudiante:
 
         
 
-class estudiante_prepa(estudiantes):
+class estudiante_prepa(estudiante):
   
   #atríbutos
   
@@ -42,14 +42,14 @@ class estudiante_prepa(estudiantes):
 CBTIS = estudiante_prepa()
 
 print("Uniforme= "+str(CBTIS.abierto_tarde))
-print("mochila= "+str( CBTIS.mochila))
-print("libros= "+str(elektra.libros))
-print("libretas= "+str(elektra.libretas))
-print("utiles= "+str(elektra.utiles))
+print("mochila= "+str(CBTIS.mochila))
+print("libros= "+str(CBTIS.libros))
+print("libretas= "+str(CBTIS.libretas))
+print("utiles= "+str(CBTIS.utiles))
 print(CBTIS.estudian_algebra
 print(CBTIS.carrera)
 
 CBTIS.estudiar()
 CBTIS.leer()
 CBTIS.dormir_tarde()
-elektra.carrera()
+CBTIS.carrera()
