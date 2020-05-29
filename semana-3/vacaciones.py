@@ -37,7 +37,7 @@ class vacaciones_playa(vacaciones):
     print("bucear")
 
   def __init__(self):
-    print("constructor de vacaciones en la playa de la riviera maya ")
+    print("constructor de vacaciones en la playa de la Riviera  Maya ")
     pass
 
 riviera_maya = vacaciones_playa()
