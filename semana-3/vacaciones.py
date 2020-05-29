@@ -1,19 +1,19 @@
-class estudiante:
+class vacaciones:
    
   "atríbutos"
-  uniforme= 1
-  mochila = 1
-  libros= 6
-  libretas= 6
-  utiles= "lapices, lapiceros"
+  jugar= "con la familia"
+  trajes de baño= 15
+  lugares_relajantes= "en lugares relajantes"
+  divertirse= "crear actividades divertidas"
+  gastronomia= "comidas tipicas del lugar"
   
   #métodos
 
-  def estudiar(self):
-    print("estudiar")
+  def relajarse(self):
+    print("relajarse")
 
-  def leer(self):
-    print("leér")
+  def descansar(self):
+    print("descansar")
 
   
   def __init__(self):
