@@ -1,6 +1,6 @@
 class classroom:
    
-  "atríbutos"
+  #atríbutos
   Color="anaranjado"
   Correo="1719110177@utectulancingo.edu.mx"
   nombre_del_alumno="Brandon Balderas Lucas"
@@ -28,7 +28,7 @@ class classrom_salvador(classroom):
   #atríbutos
   
   Publicacion_tarea= "Lunes"
-  Fecha_entrega=" Domingo"
+  Fecha_entrega= "Domingo"
 
   #métodos
   
@@ -45,12 +45,12 @@ class classrom_salvador(classroom):
 classroom_poo = classrom_salvador()
 
 print("Color: "+str(classroom_poo.Color))
-   print("Correo: "+str(classroom_poo.Correo))
-   print("Institucion: "+str(classroom_poo.Institucion))
-   print("Numero de tareas: "+str(classroom_poo.Numero_tareas))
-   print("Publicacion de tarea: "+str(classroom_poo.Publicacion_tarea))
-   print("Fecha de entrega: "+str(sclassroom_poo.Fecha_entrega))
-   print("nombre del alumno:"+ str(classroom_poo.nombre_del_alumno))
+print("Correo: "+str(classroom_poo.Correo))
+print("Institucion: "+str(classroom_poo.Institucion))
+print("Numero de tareas: "+str(classroom_poo.Numero_tareas))
+print("Publicacion de tarea: "+str(classroom_poo.Publicacion_tarea))
+print("Fecha de entrega: "+str(classroom_poo.Fecha_entrega))
+print("nombre del alumno:"+ str(classroom_poo.nombre_del_alumno))
 
 
 classroom_poo.Entregar()
