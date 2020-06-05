@@ -42,7 +42,10 @@ class Boeing(avion):
     print("encender avíon Boeing 747")
   def apagar(self):
     print("volar avion Boeing 747")
-    pass
+  def  velocidad_maxima(self):
+    print("Velocidad máxima de un avíon Boeing 747 : 528 nudos")
+  def transportarse(self):
+    print("transportarse de un avíon Boeing 747")
 
 Boeing_747 = Boeing()
 
