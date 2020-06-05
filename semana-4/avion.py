@@ -1,3 +1,4 @@
+
 class avion:
    
   "atríbutos"
@@ -38,6 +39,8 @@ class Boeing(avion):
 
   def __init__(self):
     print("constructor de un avíon Boeing 747")
+    def encender(self):
+      print("encender avíon")
     pass
 
 Boeing_747 = Boeing()
