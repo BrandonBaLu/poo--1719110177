@@ -39,8 +39,10 @@ class Boeing(avion):
 
   def __init__(self):
     print("constructor de un avíon Boeing 747")
-    def encender(self):
-      print("encender avíon")
+  def encender(self):
+    print("encender avíon")
+  def apagar(self):
+    print("volar avion Boeing 747")
     pass
 
 Boeing_747 = Boeing()
