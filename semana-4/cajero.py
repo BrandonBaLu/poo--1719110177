@@ -59,7 +59,7 @@ class cajeros(cajero):
 
 cajero_BBVA = cajeros()
 
-print("funciones del cajero de elektra ="+str(cajero_BBVA .funciones)
+print("funciones del cajero de elektra ="+str(cajero_BBVA .funciones))
 print("gabeta del cajero de elektra ="+str(cajero_BBVA .gabeta))
 print("gabeta para billetes del cajero de elektra = "+str(cajero_BBVA .gabeta_billetes))
 print("impresora del cajero de elektra = "+str(cajero_BBVA .impresora))
