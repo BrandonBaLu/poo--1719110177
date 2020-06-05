@@ -39,7 +39,13 @@ class cajeros(cajero):
     print("abre gabeta")
 
   def __init__(self):
-    print("constructor de calculadora casio_126Clc")
+    print("constructor de cajero elektra")
+  
+  def imprimir(self):
+    print("imprime del cajero de elektra")
+  
+  def pagar(self):
+    print("cierra gabeta del cajero de elektrac")
     pass
 
 cajero_BBVA = cajeros()
