@@ -1,4 +1,3 @@
-
 class avion:
    
   "atríbutos"
@@ -40,20 +39,20 @@ class Boeing(avion):
   def __init__(self):
     print("constructor de un avíon Boeing 747")
   def encender(self):
-    print("encender avíon")
+    print("encender avíon Boeing 747")
   def apagar(self):
     print("volar avion Boeing 747")
     pass
 
 Boeing_747 = Boeing()
 
-print("alas= "+str(Boeing_747.alas))
-print("acientos= "+str(Boeing_747.acientos))
-print("pilotos= "+str(Boeing_747.pilotos))
-print("libretas= "+str(Boeing_747.volantes))
-print("ventanillas= "+str(Boeing_747.ventanillas))
-print("Capacidad de pasajeros= "+str(Boeing_747.Capacidad_de_pasajeros))
-print("longitud= "+str(Boeing_747.longitud))
+print("alas del Boeing 747 = "+str(Boeing_747.alas))
+print("acientos del Boeing 74= "+str(Boeing_747.acientos))
+print("pilotos del Boeing 747 = "+str(Boeing_747.pilotos))
+print("libretas del Boeing 747 = "+str(Boeing_747.volantes))
+print("ventanillas del Boeing 747 = "+str(Boeing_747.ventanillas))
+print("Capacidad de pasajeros del Boeing 747= "+str(Boeing_747.Capacidad_de_pasajeros))
+print("longitud del Boeing 747 = "+str(Boeing_747.longitud))
 Boeing_747.encender()
 Boeing_747.apagar()
 Boeing_747.velocidad_maxima()
