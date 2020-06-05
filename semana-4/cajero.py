@@ -45,18 +45,27 @@ class cajeros(cajero):
     print("imprime del cajero de elektra")
   
   def pagar(self):
-    print("cierra gabeta del cajero de elektrac")
+    print("cierra gabeta del cajero de elektra")
+  
+  def cambio(self):
+    print("cambiar dinero en el cajero de elektra")
+  
+  def servicios(self):
+    print("abre gabeta del cajero de elektra")
+
+  def __init__(self):
+    print("constructor de cajero elektra")
     pass
 
 cajero_BBVA = cajeros()
 
-print(cajero_BBVA .funciones)
-print("gabeta "+str(cajero_BBVA .gabeta))
-print("gabeta para billetes= "+str(cajero_BBVA .gabeta_billetes))
-print("impresora "+str(cajero_BBVA .impresora))
-print("teclas "+str(cajero_BBVA .teclas))
+print("funciones del cajero de elektra ="+str(cajero_BBVA .funciones)
+print("gabeta del cajero de elektra ="+str(cajero_BBVA .gabeta))
+print("gabeta para billetes del cajero de elektra = "+str(cajero_BBVA .gabeta_billetes))
+print("impresora del cajero de elektra = "+str(cajero_BBVA .impresora))
+print("teclas del cajero de elektra "+str(cajero_BBVA .teclas))
 print(cajero_BBVA.pantalla)
-print("color= "+str(cajero_BBVA .color))
+print("color del cajero de elektra= "+str(cajero_BBVA .color))
 
 
 cajero_BBVA .imprimir()
