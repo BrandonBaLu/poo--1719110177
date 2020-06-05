@@ -37,18 +37,30 @@ class azteca(banco):
     print("abonos pequeños semanales")
 
   def __init__(self):
-    print("constructor banco azteca")
+    print("constructor banco azteca en elektra")
+  
+  def retirar(self):
+    print("retirar en elektra")
+
+  def depositar(self):
+    print("depositar en elektra")
+  
+  def  prestamos(self):
+    print("prestamos de forma inmediata en elektra")
+
+  def abonos(self):
+    print("abonos pequeños semanales en elektra")
     pass
 
 elektra = azteca()
 
-print("abierto hasta las= "+str(elektra.abierto_tarde))
+print("abierto en elektra hasta las = "+str(elektra.abierto_tarde))
 print(elektra.entrega)
-print("cajeros= "+str(elektra.cajeros))
-print("personal= "+str(elektra.personal))
-print("sillas= "+str(elektra.sillas))
-print("pantallas llama turnos= "+str(elektra.pantallas_llama_turnos))
-print("ventanillas= "+str(elektra.ventanillas))
+print("cajeros en elektra = "+str(elektra.cajeros))
+print("personal en elektra = "+str(elektra.personal))
+print("sillas en elektra= "+str(elektra.sillas))
+print("pantallas llama turnos en elektra = "+str(elektra.pantallas_llama_turnos))
+print("ventanillas en elektra = "+str(elektra.ventanillas))
 
 elektra.retirar()
 elektra.depositar()
