@@ -1,7 +1,7 @@
 class futbolista:
    
   "atríbutos"
-  edad= 30
+  edad= 17
   altura= 1.80
   camiseta= 10
   posicion= "delantero"
@@ -39,6 +39,23 @@ class futbolista_barcelona(futbolista):
 
   def __init__(self):
     print("Lionel Messi ")
+  
+  def correr(self):
+    print("correr  a una velocidad de 32.5 Km/h")
+  edad= "32 años"
+  altura= 1.70
+  camiseta= 10
+  posicion= "delantero"
+  categoria="libre"
+  
+  def saltar(self):
+    print("salta a una altura de 2.56 metros ")
+
+  def patear(self):
+    print("patea a 119 km/h")
+  
+  def gol(self):
+    print("mete un promedio de goles de 0.81% por partido")
     pass
 
 Messi = futbolista_barcelona()
