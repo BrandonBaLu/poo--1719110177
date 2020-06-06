@@ -38,6 +38,24 @@ class Grand_cheroke(coche):
 
   def __init__(self):
     print("constructor de Grand Cherokee 2004")
+
+  color= "gris"
+  aire= "con aire acondicionado fresco "
+
+  
+  def encender(self):
+    print("encender grad cheroke_2004")
+
+  def apagar(self):
+    print("apagar camioneta grad cheroke_2004")
+
+  def  velocidad_maxima(self):
+    print("Velocidad máxima: 200 km/h en carretera")
+
+  def arrancar_control(self):
+    print("arrancar a control remoto de forma inmediata")
+
+  def __init__(self):
     pass
 
 cheroke_2004 = Grand_cheroke()
