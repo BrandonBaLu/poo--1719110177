@@ -27,15 +27,15 @@ class cadenas:
 		      " caracteres")
 
 	def imprimirLonsinSpacio(self):
-		quitarEspacio = self.cadena.replace(" ", "")
+		sin_espacio = self.cadena.replace(" ", "")
 		print("La longitud de la cadena sin espacios es de :" +
-		      str(len(quitarEspacio)) + " caracteres")
-		print("La cadena sin espacios: " + quitarEspacio)
+		      str(len(sin_espacio)) + " caracteres")
+		print("La cadena sin espacios: " + sin_espacio)
 
 
 eleccion = "S"
 while eleccion == "S" or eleccion == "s":
-	cadena = input("Ingresa el texto:\n")
+	cadena = input("Ingresa la cadena a analizar :\n")
 	objetocadenas = cadenas(cadena)
 	print(objetocadenas.cadena)
 	objetocadenas.imprimirLongiud()
