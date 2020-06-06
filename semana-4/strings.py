@@ -4,12 +4,12 @@ class cadenas:
 	def __init__(self, cadena):
 		self.cadena = cadena
 
-	def imprimirPorSeparado(self):
+	def separado(self):
 
 		for caracter in self.cadena:
 			print(caracter)
 
-	def imprimirTipoDato(self):
+	def tipo_dato(self):
 		dato = ""
 		print("La cadena por separado")
 		for caracter in self.cadena:
@@ -22,24 +22,24 @@ class cadenas:
 
 			print("El siguiente : " + caracter + " es un: " + dato)
 
-	def imprimirLongiud(self):
+	def longiud(self):
 		print("La longitud de la cadena es de :" + str(len(self.cadena)) +
 		      " caracteres")
 
-	def imprimirLonsinSpacio(self):
+	def no_espacios(self):
 		sin_espacio = self.cadena.replace(" ", "")
 		print("La longitud de la cadena sin espacios es de :" +
 		      str(len(sin_espacio)) + " caracteres")
 		print("La cadena sin espacios: " + sin_espacio)
 
 
-eleccion = "S"
-while eleccion == "S" or eleccion == "s":
+repetir = "Si"
+while repetir == "Si" or repetir == "si":
 	cadena = input("Ingresa la cadena a analizar :\n")
 	objetocadenas = cadenas(cadena)
 	print(objetocadenas.cadena)
-	objetocadenas.imprimirLongiud()
-	objetocadenas.imprimirPorSeparado()
-	objetocadenas.imprimirTipoDato()
-	objetocadenas.imprimirLonsinSpacio()
-	eleccion = input("¿Desea analizar otra cadena s/n\n")
+	objetocadenas.longiud()
+	objetocadenas.separado()
+	objetocadenas.tipo_dato()
+	objetocadenas.no_espacios()
+	repetir = input("¿Desea analizar otra cadena?\nsi\nno\n")
