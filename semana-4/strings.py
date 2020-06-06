@@ -30,7 +30,7 @@ class cadenas:
 		sin_espacio = self.cadena.replace(" ", "")
 		print("La longitud de la cadena sin espacios es de :" +
 		      str(len(sin_espacio)) + " caracteres")
-		print("La cadena sin espacios: " + sin_espacio)
+		print("La cadena sin espacios: " + str(sin_espacio))
 
 
 repetir = "Si"
