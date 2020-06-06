@@ -40,21 +40,36 @@ class classrom_salvador(classroom):
 
   def __init__(self):
     print("constructor classrom POO")
-    pass
+  
+  def Ver_calificacion(self):
+   print("calificar tareas del alumno")
+  
+  def Compartir_archivos(self):
+   print("Compartir archivos para el alumno ")
+  
+  def Comentar(self):
+   print("Comentar indicacionespara el alumno")
+  
+  def Entregar(self): 
+   print("Entregar tareas por parte del alumno")
+  
+  def Publicar_tarea(self):
+   print("Publicar Tareas")
+   pass
 
 classroom_poo = classrom_salvador()
 
-print("Color: "+str(classroom_poo.Color))
-print("Correo: "+str(classroom_poo.Correo))
-print("Institucion: "+str(classroom_poo.Institucion))
-print("Numero de tareas: "+str(classroom_poo.Numero_tareas))
-print("Publicacion de tarea: "+str(classroom_poo.Publicacion_tarea))
-print("Fecha de entrega: "+str(classroom_poo.Fecha_entrega))
-print("nombre del alumno:"+ str(classroom_poo.nombre_del_alumno))
+print("Color de la clase de POO: "+str(classroom_poo.Color))
+print("Correo del alumno inscrito : "+str(classroom_poo.Correo))
+print("Institucion del alumno: "+str(classroom_poo.Institucion))
+print("Numero de tareas asignadas en POO: "+str(classroom_poo.Numero_tareas))
+print("Publicacion de tarea en POO: "+str(classroom_poo.Publicacion_tarea))
+print("Fecha de entrega de las tareas asignadas de POO: "+str(classroom_poo.Fecha_entrega))
+print("nombre del alumno inscrito a la clase de POO:"+ str(classroom_poo.nombre_del_alumno))
 
 
 classroom_poo.Entregar()
 classroom_poo.Publicar_tarea()
 classroom_poo.Ver_calificacion()
 classroom_poo.Compartir_archivos()
-classroom_poo.Comentar()3
+classroom_poo.Comentar()
