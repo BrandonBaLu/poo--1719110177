@@ -1,4 +1,4 @@
-lass estudiante:
+class estudiante:
    
   "atríbutos"
   uniforme= 1
@@ -37,7 +37,25 @@ class estudiante_prepa(estudiante):
     print("proyectos")
 
   def __init__(self):
-    print("constructor estudiantes de preparatoria")
+    print("constructor estudiantes de CBTIS")
+  uniforme= "color azul"
+  libros= "por materia"
+  libretas= "por materia"
+  utiles= "material didactico"
+  def estudiar(self):
+    print("estudiar en las instalaciones del CBTIS")
+
+  def leer(self):
+    print("leér en el CBTIS")
+  
+  def  dormir_tarde(self):
+    print("dormir tarde por realizar tareas")
+
+  def trabajos(self):
+    print("proyectos del CBTIS")
+
+  def entrar(self):
+    print("entrar temprano al CBTIS")
     pass
 
 CBTIS = estudiante_prepa()
@@ -54,3 +72,4 @@ CBTIS.estudiar()
 CBTIS.leer()
 CBTIS.dormir_tarde()
 CBTIS.trabajos()
+CBTIS.entrar
