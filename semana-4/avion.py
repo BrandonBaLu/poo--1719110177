@@ -5,7 +5,7 @@ class avion:
   acientos = 416
   pilotos= 2
   volantes= 2
-  ventanillas= 60
+  ventanillas= 608
   
   #métodos
 
