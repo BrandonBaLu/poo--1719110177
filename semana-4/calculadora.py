@@ -37,8 +37,31 @@ class casio(calculadora):
   def dividir(self):
     print("dividir")
 
+  def potencia(self):
+    print("eleva potencia")
+
   def __init__(self):
     print("constructor de calculadora casio_126Clc")
+  
+  funciones= "funciones  de calculadora casio_126Clc"
+  multiplicacion="multiplicacion  de calculadora casio_126Clc"
+  teclas= 50
+  tipo= "cientifica"
+  forma="rectangular"
+  def prender(self):
+    print("Encender calculadora casio_126Clc")
+
+  def apagar(self):
+    print("apagar calculadora casio_126Clc")
+
+  def  graficar(self):
+    print("graficar en calculadora casio 126Clc")
+    
+  def dividir(self):
+    print("dividir en calculadora casio 126Clc")
+  
+  def potencia(self):
+    print("eleva potencia en calculadora casio 126Clc")
     pass
 
 casio_126Clc = casio()
@@ -58,3 +81,4 @@ casio_126Clc.prender()
 casio_126Clc.apagar()
 casio_126Clc.graficar()
 casio_126Clc.dividir()
+casio_126Clc.potencia()
