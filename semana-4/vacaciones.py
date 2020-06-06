@@ -1,6 +1,6 @@
 class vacaciones:
    
-  "atríbutos"
+  #atríbutos
   juegos_didacticos="juegos didacticos"
   familia= "personas con quien disfrutes estar"
   lugares_relajantes= "en lugares relajantes"
@@ -38,6 +38,25 @@ class vacaciones_playa(vacaciones):
 
   def __init__(self):
     print("constructor de vacaciones en la playa de la Riviera  Maya ")
+  
+  juegos_didacticos="juegos didacticos como meterse bajo la arena"
+  familia= "personas con quien disfrutes estar en medio de la playa"
+  lugares_relajantes= "Mar de la Riviera Maya"
+  comidas_en_familia="comer Mariscos en un restaurante"
+  gastronomia= "comidas tipicas del lugar"
+
+  def relajarse(self):
+    print("relajarse tomando el sol en la arena")
+
+  def descansar(self):
+    print("descansar en un hotel de la Riviera Maya")
+  
+  def  nadar(self):
+    print("nadar en las playas de la Riviera Maya")
+ 
+  def bucear(self):
+    print("bucear en el fondo del mar de la Riviera Maya")
+
     pass
 
 riviera_maya = vacaciones_playa()
