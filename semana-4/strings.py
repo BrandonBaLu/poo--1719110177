@@ -20,7 +20,7 @@ class cadenas:
 			elif caracter.isdecimal() == False and caracter.isdigit() == False:
 				dato = "Simbolo"
 
-			print("El siguiente : " + caracter + " es un: " + dato)
+			print("El siguiente : " + str(caracter) + " es un: " +str(dato))
 
 	def longiud(self):
 		print("La longitud de la cadena es de :" + str(len(self.cadena)) +
