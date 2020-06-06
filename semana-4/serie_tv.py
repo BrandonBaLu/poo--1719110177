@@ -39,6 +39,19 @@ class series_drama(seriestv):
 
   def __init__(self):
     print("constructor de SexEducation ")
+  drama= "series de tristeza por no ver a los protagonoistas juntos"
+
+  def entretenerse(self):
+    print("matar el aburrimiento")
+  
+  def actuar(self):
+    print("actuar")
+  
+  def grabar(self):
+    print("grabar ecenas tristes")
+
+  def convivir(self):
+    print("convivir en familia viendo Sex Education")
     pass
 
 SexEducation = series_drama()
