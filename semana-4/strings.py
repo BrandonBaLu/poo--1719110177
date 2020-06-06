@@ -1,9 +1,9 @@
-class cadena_1:
+class cadenas:
 
-  cadenas=input("ingresa la cadena a leer\n")
+  cadena_1=input("ingresa la cadena a leer\n")
 
   def __init__(self):
     pass
 
-  objeto=cadena_1
-  print(objeto.cadenas)
+objeto=cadenas()
+print(objeto.cadena_1)
