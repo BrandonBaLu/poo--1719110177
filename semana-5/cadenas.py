@@ -24,7 +24,6 @@ class Palindromo: #Creacion de la clase
       lista.append(caracter)
       listaaux.append(caracter)
       cont=cont+1 #incremento mi contador
-    
 #Creo otro bucle tengo dos listas mi idea es recorrer una normal y la otra a la inversa
     for i in range(cont-1,-1,-1): 
       #evaluo ambas listas
