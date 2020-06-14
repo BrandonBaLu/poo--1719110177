@@ -8,6 +8,16 @@ class palindromo:
     print("el texto es: "+self.texto)
     
     self.texto=texto.replace(" ", "").lower().replace(".","")
+
+  
+  def vocales(self):
+    vocal=["a","e","i","o","u","á","é","í","o","ú"]
+    cont=0
+    for i in vocal:
+      for j in texto:
+        if (1==j):
+          cont+=1
+    print("el numero de vocales es: ",cont)
   
   def palindromo(self):
     
@@ -32,16 +42,7 @@ class palindromo:
       
     print(resultado)
 
-  def vocal(self):
-    global texto
-  def vocales(self):
-    vocal=["a","e","i","o","u","á","é","í","o","ú"]
-    cont=0
-    for i in vocal:
-      for j in texto:
-        if (1==j):
-          cont+=1
-    print("elnumero de vocales es: ",cont)
+  
 
     
 eleccion="S"
@@ -52,6 +53,6 @@ while  eleccion=="S" or eleccion=="s":
   print(texto)
   objetopalindromo= palindromo(texto)
   objetopalindromo.palindromo()
-  objetopalindromo.vocal()
+ 
   objetopalindromo.vocales()
   eleccion=input("¿Desea analizar otra cadena s/n\n")
