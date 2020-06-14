@@ -1,6 +1,7 @@
 import unidecode  
 class palindromo: 
-  texto ="" 
+  texto =""
+  vocales="aeiou" 
 
   def __init__(self,texto): 
     self.texto=texto    
@@ -30,15 +31,27 @@ class palindromo:
       aux=aux+1
       
     print(resultado)
+
+  def vocal(self):
+    global texto
+  def vocales(self):
+    vocal=["a","e","i","o","u","á","é","í","o","ú"]
+    cont=0
+    for i in vocal:
+      for j in texto:
+        if (1==j):
+          cont+=1
+    print("elnumero de vocales es: ",cont)
+
+    
 eleccion="S"
 while  eleccion=="S" or eleccion=="s":
-  texto =input("Ingresa la palabra:\n") 
+  texto =input("Ingresa el texto:\n") 
   if texto.isalpha() == True:
     texto=unidecode.unidecode(texto)
   print(texto)
   objetopalindromo= palindromo(texto)
   objetopalindromo.palindromo()
+  objetopalindromo.vocal()
+  objetopalindromo.vocales()
   eleccion=input("¿Desea analizar otra cadena s/n\n")
-
-    
-    
