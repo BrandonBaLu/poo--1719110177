@@ -6,7 +6,7 @@ class Palindromo: #Creacion de la clase
     self.palabra=palabra    #igualo variables
     print("La palabra: "+self.palabra)
     #Aqui le doy formato quitando espacios y haciendo todas minusculas y quitando puntos
-    self.palabra=palabra.replace(" ", "").lower().replace(".","")#.replace("á","a")
+    self.palabra=palabra.replace(" ", "").lower().replace(".","").replace("á","a")
     #metodo palindromo
   def Palindromo(self):
     #Creo dos listas
