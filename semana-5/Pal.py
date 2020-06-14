@@ -26,50 +26,50 @@ class palindromo: #inserte la clase llamada palindromo
       lista1.append(caracter)  #listas globales 
       listaux.append(caracter)
       cont=cont+1  #aumente mi contador 
-    for i in range(cont-1,-1,-1): 
+    for i in range(cont-1,-1,-1): #inicie otro blucle dentro de mi rango de contadores para que leyera el texto al reves 
       if lista1[aux]==listaux[i]:
-        resultado="Es palindromo"
+        resultado="Es palindromo"#variables globales
       else:
         resultado="No palindromo"
         def test():
           
-          return texto
+          return texto #regrese a mi texto 
 
         test()
 
 
       aux=aux+1
       
-    print(resultado)
+    print(resultado) #imprimi mi resultado
 
 
 
-  def vocales(self):
+  def vocales(self):#definí mi funcion para mis vocales que arrojara la cantidad de vocales que tiene un texto
     vocal=["a","e","i","o","u","á","é","í","ó","ú"] 
     cont=0
-    for i in vocal:
+    for i in vocal: 
       for j in txt:
         if (i==j):
           cont+=1
-    print("el numero de vocales es: ",cont)
+    print("el numero de vocales es: ",cont) #imprimí el numero de vocales 
 
 
     
-repetir="S"
-while  repetir=="S" or repetir=="s":
-  texto =input("Ingresa el texto a analizar:\n").lower().replace(".","").replace("á","a").replace("é","e").replace("í","i").replace("ó","o").replace("ú","u")
-  txt=texto
+repetir="S"#declare mi variable con un valor de "s" para mi ciclo 
+while  repetir=="S" or repetir=="s":#inicie mi ciclo para que mi codigo regresara 
+  texto =input("Ingresa el texto a analizar:\n").lower().replace(".","").replace("á","a").replace("é","e").replace("í","i").replace("ó","o").replace("ú","u")#remplace mis vocales de acentos para remplazarlas normal
+  txt=texto #iguale mis variables globales 
   texto1=texto
-  print ("El texto es:",txt)
-  contador1=0 
-  for espacios in txt:
+  print ("El texto es:",txt) #imprimí mi texto normal 
+  contador1=0  #inicie un nuevo contador para contar mis espacios
+  for espacios in txt: #inicie un ciclo for para contabilizar mis espacios
      if espacios in " ":
-      contador1+=1
+      contador1+=1#aumente mi contador para que cada espacio que tubiera los imprimiera
   print("El total de espacios dentro del texto es:",contador1)   
   
-  if texto.isalpha() == True: #evalúe si es verdad que iterara los 
-    texto=unidecode.unidecode(texto1)
-  objetopalindromo= palindromo(texto1)
-  objetopalindromo.palindromo()
+  if texto.isalpha() == True: #evalúe la veracidad del resultado
+    texto=unidecode.unidecode(texto1)#utilice mi libreria importada
+  objetopalindromo= palindromo(texto1)#iguale mis objetos
+  objetopalindromo.palindromo() #utilice mis objetos 
   objetopalindromo.vocales()
-  repetir=input("¿Desea analizar otra cadena s/n\n")
+  repetir=input("¿Desea analizar otra cadena de texto s/n\n")#pregunte al usuario si deseaba analizar otra cadena
