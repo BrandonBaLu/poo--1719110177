@@ -1,18 +1,22 @@
-import unidecode  #importo la libreria
-class palindromo: #Creacion de la clase
-  texto ="" 
+import unidecode  
+class palindromo: 
+  texto ="" #Atributos
 
-  def __init__(self,texto):  
-    self.texto=texto   
-    print("La palabra: "+self.texto)
+  def __init__(self,texto): 
+    self.texto=texto    
+    print("el texto es: "+self.texto)
+    
     self.texto=texto.replace(" ", "").lower().replace(".","")
-    #metodo palindromo
+  
   def palindromo(self):
+    
     lista=[]
     listaaux=[]
+   
     cont=0
     aux=0
     resultado=""
+    
     for indice in range(len(self.texto)):
       caracter = self.texto[indice]
       lista.append(caracter)
@@ -32,8 +36,8 @@ while  eleccion=="S" or eleccion=="s":
   if texto.isalpha() == True:
     texto=unidecode.unidecode(texto)
   print(texto)
-  objpalindromo= palindromo(texto)
-  objpalindromo.palindromo()
+  objetopalindromo= palindromo(texto)
+  objetopalindromo.palindromo()
   eleccion=input("¿Desea analizar otra cadena s/n\n")
 
     
