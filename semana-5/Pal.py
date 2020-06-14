@@ -57,7 +57,7 @@ class palindromo:
     
 repetir="S"
 while  repetir=="S" or repetir=="s":
-  texto =input("Ingresa el texto:\n").lower().replace(".","").replace("á","a")
+  texto =input("Ingresa el texto a analizar:\n").lower().replace(".","").replace("á","a","é","e","i","í","ó","o","ú","u")
   txt=texto
   texto1=texto
   print ("El texto es:",txt)
