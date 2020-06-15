@@ -28,9 +28,9 @@ class palindromo: #inserte la clase llamada palindromo
       cont=cont+1  #aumente mi contador 
     for i in range(cont-1,-1,-1): #inicie otro blucle dentro de mi rango de contadores para que leyera el texto al reves 
       if lista1[aux]==listaux[i]:
-        resultado="Es palindromo"#variables globales
+        resultado="***Es palindromo***"#variables globales
       else:
-        resultado="No palindromo"
+        resultado="***No palindromo***"
         def test():
           
           return texto #regrese a mi texto 
