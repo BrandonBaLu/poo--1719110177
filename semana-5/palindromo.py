@@ -30,7 +30,7 @@ class palindromo: #inserte la clase llamada palindromo
       if lista1[aux]==listaux[i]:
         resultado="***Es palindromo***"#variables globales
       else:
-        resultado="***No palindromo***"
+        resultado="***No es un palindromo***"
         def test():
           
           return texto #regrese a mi texto 
