@@ -1,0 +1,4 @@
+class cesar:
+  texto=""
+  
+
