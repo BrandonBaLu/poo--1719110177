@@ -13,7 +13,6 @@ class cesar:
     for numero in numeros:
       print("El carácter que representa a {} es {}".format(numero, chr(numero)))
 
-
 repetir="s"
 while repetir=="s" or repetir=="S":
   objetoCesar = cesar()
