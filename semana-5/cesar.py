@@ -1,33 +1,32 @@
 class Ascii():
   texto=""
-  if texto==texto.upper () :
-    abc="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
-  
-  else:
-    abc="abcdefghijklmnñopqrstuvwxyz"
-  
-  tipo=int(input("Ingrese el tipo de trabajo a realizar |\n1:Encriptar 2:Desencriptar|\ningrese numero\n"))
-  texto =""
-
-  def __init__(self):
-    pass
-  if tipo==1:
+        
+  tipo=int(input("Ingrese declare mi claseel tipo de trabajo a realdefini mi constructorizar \n|1:Encriptar 2:Desencriptar|\ning#defini mi metodo a llamarrese numero\n"))
+    
+ or reperir="s"  if tipo==1:
     def ascii(self,texto):
-      cifrado=0
-      texto=input("ingrese su cadena de texto\n")
-      for c in texto:
-        if c in abc:
-          cifrad += abc(abc.index(c)+k%(len(abc)))
-        else:
-          cifrad+=c
-          return ord(texto)
+      texto = input("Mensaje cifrado > ").upper()
+      nin = int(input("Desplazamiento > "))
+      cifrado = ""
+      if texto==texto.upper():
+        abc="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
+      else:
+        abc="abcdefghijklmnñopqrstuvwxyz" #PARA MINUSCULAS
+        for l in texto:
+          if l in abc:
+            pos_letra = abc.index(l)
+            nueva_pos = (pos_letra + nin) % len(abc)
+            cifrado+= abc[nueva_pos]
+          else:
+            cifrado+= l
+            print("Mensaje cifrado:", cifrado)
+objetoascii=Ascii(texto)
+objetoascii.ascii
 
-  def caracter(self, ascii):
-    return chr(ascii)
+  
+  
 
-objeto=Ascii()
 
-print(objeto.ascii(caracter))
-print(objeto.caracter(75))
+
 
 
