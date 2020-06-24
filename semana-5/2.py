@@ -40,22 +40,13 @@ if modo in 'encriptar e desencriptar d'.split():
                 num -= 26
                 elif num < ord('A'):
                   num += 26
-
-41.             elif simbolo.islower():
-
-42.                 if num > ord('z'):
-
-43.                     num -= 26
-
-44.                 elif num < ord('a'):
-
-45.                     num += 26
-
-46.
-
-47.             traduccion += chr(num)
-
-48.         else:
+                  elif simbolo.islower():
+                    if num > ord('z'):
+                      num -= 26
+                      elif num < ord('a'):
+                        num += 26
+                        traduccion += chr(num)
+          else:
 
 49.             traduccion += simbolo
 
