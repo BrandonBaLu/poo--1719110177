@@ -17,9 +17,10 @@ class cesar:
 repetir="s"
 while repetir=="s" or repetir=="S":
   objetoCesar = cesar()
-  tipo=int(input("¿Que deseas hacer?\n|1:cifrar\n2:descifrar\n"))
+  tipo=int(input("¿Que deseas hacer?\n¦1:cifrar¦\n¦2:descifrar¦\ningresa el numero de lo que deseas hacer\n"))
   if tipo==1:
     objetoCesar.ascii()
   if tipo==2:
     objetoCesar.descodificar()
   repetir=input ("¿Desea repetir? S/N\n")
+  
