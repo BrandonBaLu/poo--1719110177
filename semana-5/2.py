@@ -1,67 +1,32 @@
-cifrado.py
+class cesar:#primero declare mi clase
+  t=0
+  numeros=0  
+  def _init_(self):#definí mi constructor
+    pass
 
-# Cifrado Cesar
+  def ascii(self): #por otro lado definí mi metodo en donde se generara el cifrado
+  
+    texto =input("ingresa tu texto\n")
+    for t in texto:
+      print("El valor de {} es {}".format(texto, ord(t))) 
+      numeros=t
+  
+  def descodificar (self):
+    dec = [] 
+    texto =input("ingresa tu texto\n") 
+    for i in range(len(texto)): 
+     key_c = key[i % len(key)] 
+     dec_c = chr((256 + ord(enc[i]) - ord(key_c)) % 256)
+     dec.append(dec_c)  
+     print(chr(dec))
+    
 
-
-
-TAM_MAX_CLAVE = 26
-
-       
-
-def obtenerModo():
-
-while True:
-print('¿Deseas encriptar o desencriptar un mensaje?')
-modo = input().lower()
-if modo in 'encriptar e desencriptar d'.split():
-  return modo
-  else:
-    print('Ingresa "encriptar" o "e" o "desencriptar" o "d"')
-    def obtenerMensaje():
-      print('Ingresa tu mensaje:')
-      return input()
-    def obtenerClave():
-      clave = 0
-      while True:
-        print('Ingresa el número de clave (1-%s)' % (TAM_MAX_CLAVE))
-        clave = int(input())
-        if (clave >= 1 and clave <= TAM_MAX_CLAVE):
-          return clave
-    def obtenerMensajeTraducido(modo, mensaje, clave):
-      if modo[0] == 'd':
-        clave= -clave
-        traduccion = ''
-        for simbolo in mensaje:
-          if simbolo.isalpha():
-            num = ord(simbolo)
-            num += clave
-            if simbolo.isupper():
-              if num > ord('Z'):
-                num -= 26
-                elif num < ord('A'):
-                  num += 26
-                  elif simbolo.islower():
-                    if num > ord('z'):
-                      num -= 26
-                      elif num < ord('a'):
-                        num += 26
-                        traduccion += chr(num)
-          else:
-
-49.             traduccion += simbolo
-
-50.     return traduccion
-
-51.
-
-52. modo = obtenerModo()
-
-53. mensaje = obtenerMensaje()
-
-54. clave = obtenerClave()
-
-55.
-
-56. print('Tu texto traducido es:')
-
-57. print(obtenerMensajeTraducido(modo, mensaje, clave))
+repetir="s"
+while repetir=="s" or repetir=="S":
+  objetoCesar = cesar()
+  tipo=int(input("¿Que deseas hacer?\n¦1:cifrar¦\n¦2:descifrar¦\ningresa el numero de lo que deseas hacer\n"))
+  if tipo==1:
+    objetoCesar.ascii()
+  if tipo==2:
+    objetoCesar.descodificar()
+  repetir=input ("¿Desea repetir? S/N\n")
