@@ -8,10 +8,10 @@ def menuPrincipal():
   print("======== Utec Tulancingo ========= ")
   print("=========***************========== ")
   print("================================== ")
-  print("== 1) Cifrar                    == ")
-  print("== 2) Decifrar                  == ")
-  print("== 3) Decifrar por fuerza bruta == ")
-  print("== 4) Salir                     == ")
+  print("== 1) |Cifrar  |                   == ")
+  print("== 2) |Decifrar|                 == ")
+  print("== 3) |Decifrar por fuerza bruta| == ")
+  print("== 4) |Salir   |                 == ")
   print("==== BRANDON BALDERAS LUCAS ====== ")
   print("================================== ")
   opcion = input().lower();
@@ -57,8 +57,8 @@ def traducirMensaje(opcion, mensaje, clave):
 
 def main():
   repetir="s"
-while repetir=="s" or repetir=="S":
-  repetir=input ("¿Desea repetir? S/N\n")
+  while repetir=="s" or repetir=="S":
+repetir=input ("¿Desea repetir? S/N\n")
   opcion = menuPrincipal()
   if opcion == '4':
    break
