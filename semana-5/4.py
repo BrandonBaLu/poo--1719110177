@@ -75,3 +75,13 @@ class cesar:
           print("********************************** ")
           if __name__ == "__main__":
             main()
+
+
+repetir="s"
+while repetir=="s" or repetir=="S":
+  objetoCesar = cesar()
+  objetoCesar.menuPrincipal()
+  objetoCesar.obtenerMensaje()
+  objetoCesar.obtenerClave()
+  objetoCesar.traducirMensaje()
+  repetir=input ("¿Desea repetir? S/N\n")
