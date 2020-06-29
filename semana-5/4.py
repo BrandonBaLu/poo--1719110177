@@ -1,7 +1,6 @@
 import os
 class cesar:
   TAM_MAX_CLAVE = 26
-  repetir="s"
   def menuPrincipal():
     while True:
       print("================================== ")
@@ -73,8 +72,8 @@ class cesar:
           print('El texto codificado es:',traducirMensaje(opcion, mensaje, clave));
           print("================================== ")
           print("********************************** ")
-          if __name__ == "__main__":
-            main()
+    if __name__ == "__main__":
+      main()
 
 
 repetir="s"

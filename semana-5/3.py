@@ -56,12 +56,9 @@ def traducirMensaje(opcion, mensaje, clave):
  return traduccion
 
 def main():
-  repetir="s"
-  while repetir=="s" or repetir=="S":
-repetir=input ("¿Desea repetir? S/N\n")
   opcion = menuPrincipal()
-  if opcion == '4':
-   break
+  #if opcion == '4':
+   # break
   mensaje = obtenerMensaje()
   if opcion == '3':
    print('Tu texto traducido es:')
