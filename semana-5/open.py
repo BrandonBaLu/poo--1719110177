@@ -1,5 +1,7 @@
 class cesar: #declare mi clase llamada cesar
   def archivo(self): #definí mi metodo llamado archivo para poderlo llamar al final como objeto
+
+  
     repetir ="s" #difiní mi variable para mi ciclo while
     while repetir == "S" or repetir =="s": #puse mi condicion, si repetir esa igual a eso que se repita todo
       codificar= "" #declare mis variables 
