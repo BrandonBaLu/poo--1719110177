@@ -1,18 +1,16 @@
-class cesar:
-  def _init_(self): 
-    pass
+class cesar: #declare mi clase
   def tipo(self):
     repetir ="s" 
     while repetir == "S" or repetir =="s": #si le elige s o S se vuelve a correr el programa#
       codificar= "" 
       descifrar = "" 
-      print ("=======++++++++++++++++=======") 
-      archivo= input("Escribe el nombre del archivo:\n=======++++++++++++++++=======\n") #se pide de archivo#
+      print ("========++++++++++++++++========") 
+      archivo= input("*Escribe el nombre del archivo:*\n========++++++++++++++++========\n") #se pide de archivo#
       abrir= open(archivo, "r") 
       leer= abrir.read() 
       print(leer) 
-      print("********")
-      respuesta= int(input("====¦1:Codificar¦=======\n====¦2:descodificar¦====\n"+"********\n"))
+      print("**Brandon Balderas Lucas**")
+      respuesta= int(input("====¦1:Codificar¦=======\n====¦2:descodificar¦====\n"+"*****UTEC TULANCINGO*****\n"))
       if respuesta==1: 
         abrir= open(archivo, "a")
         for cambiar in leer: 
