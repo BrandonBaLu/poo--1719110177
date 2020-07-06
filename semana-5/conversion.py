@@ -26,7 +26,7 @@ class temperaturas():#definí mi clase
                        lista.append(celcius)#recabo las temperaturas reabadas
                        i=i+1#aumento mi contador
                        cantidad=cantidad-1 #aumento mi contador para que aumente el numero de la cantidad 
-                       farenheit= celcius*1.8+32#ingreso mi formula para convertir mis grados celcius a farenheit
+                       farenheit= (celcius*1.8)+32#ingreso mi formula para convertir mis grados celcius a farenheit
                        piInString = str(celcius)#igualo mis variables tipo float a un string 
                        piInString2 = str(farenheit)#igualo mis variables tipo float a un string 
                        abrir.write(str("\n"+piInString))#abro el documento e ingreso los valores de celcius
