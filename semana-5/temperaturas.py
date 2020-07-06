@@ -47,8 +47,6 @@ class temperaturas():
                        
                    break
                    abrir.close()
-           
-            
-
+                       
 objeto=temperaturas() 
 objeto.celcius()
