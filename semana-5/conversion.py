@@ -29,24 +29,24 @@ class temperaturas():#definí mi clase
                        farenheit= celcius*1.8+32#ingreso mi formula para convertir mis grados celcius a farenheit
                        piInString = str(celcius)#igualo mis variables tipo float a un string 
                        piInString2 = str(farenheit)#igualo mis variables tipo float a un string 
-                       abrir.write(str("\n"+piInString))
-                       abrir.write(str("\n"+piInString2)) 
-                       print("los grados en celcius son:\n",celcius, "\nlos grados en farenheit son: \n", farenheit)
-               repetir =input("¿desea repetir?\nS/N\n")
-               if repetir == "N" or repetir == "n":
+                       abrir.write(str("\n"+piInString))#abro el documento e ingreso los valores de celcius
+                       abrir.write(str("\n"+piInString2)) #abro el documento e ingreso los valores de farenheit
+                       print("los grados en celcius son:\n",celcius, "\nlos grados en farenheit son: \n", farenheit)#imprimo los valores de celcius y farenheit ingresados y convertidos
+               repetir =input("¿desea repetir?\nS/N\n")#si repetir es igual a s o S el proceso iniciara de nuevo
+               if repetir == "N" or repetir == "n":#si repetir esigual a n imprimira el promedio general del archivo y agradecera el uso del prgrama
                    print ("===================================================") 
                    print("Gracias por usar codigo convertidor de temperaturas")
                    print ("===================================================")
                    abrir= open(archivo, "a")
-                   for convertir in leer:
+                   for convertir in leer:#en un rango del archivo abierto generara el promedio
                        promedio=(promedio+celcius)/cont  
                        piInString3 = str(promedio)#igualo mis variables tipo float a un string 
-                       abrir.write(str("\n"+piInString3))
-                       print("Promedio "+str(promedio))
-                       break
+                       abrir.write(str("\n"+piInString3))#escribira en el archivo el promedio
+                       print("Promedio "+str(promedio))#imprimira el promedio
+                       break#rompera el ciclo
                        
-                   break
-                   abrir.close()
+                   break#rompera el ciclo completo
+                   abrir.close()#cerrara el archivo
                        
-objeto=temperaturas() 
-objeto.celcius()
+objeto=temperaturas() #igualo mi objeto con mi clase
+objeto.celcius()#mando a traer mi metodo
