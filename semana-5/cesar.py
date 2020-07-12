@@ -1,25 +1,39 @@
-class cesar:#primero declare mi clase
+print("**-Bienvenidos al cifrado de cesar-**")
+class cesar: #
 
-  def _init_(self):#definí mi constructor
-    pass
 
-  def ascii(self): #por otro lado definí mi metodo en donde se generara el cifrado
-    texto =input("ingresa tu texto\n")#pedi que el usuario ingresara su cadena de texto
-    for texto in texto:#en un rango de lo que mide la cadena pedi que codificara el texto
-      print("El valor de {} es {}".format(texto, ord(texto)))
-  
-  def descodificar (self):#declare mi metodo descodificar que se encarga de realizar dicha funcion
-    numeros=int(input("ingresa tus valores en numeros enteros\n"))
-    for numero in numeros:#con ayuda de el for 
-      print("El carácter que representa a {} es {}".format(numero, chr(numero)))#imprimo los valores y los convierto los valores en letras de nuevo, aunque no me sale ;(
+    def _init_(self):#
+        pass
 
-repetir="s"#declaro mi variable de repetir
-while repetir=="s" or repetir=="S":#inicio mi ciclo de iteracion para preguntarle al usuario que si quiere realizar otra operacion
-  objetoCesar = cesar()#iguale mi bojeto con mi clase 
-  tipo=int(input("¿Que deseas hacer?\n¦1:cifrar¦\n¦2:descifrar¦\ningresa el numero de lo que deseas hacer\n"))# pregunto al usuario que desea hacer y que elija con un numero de lo que desea hacer
-  if tipo==1:#si el usuario elije la opccion 1 le digo que realice todo lo que esta en el metodo ascii
-    objetoCesar.ascii()
-  if tipo==2:#si el usuario elije la opccion  le digo que realice todo lo que esta en el metodo descodificar
-    objetoCesar.descodificar()
-  repetir=input ("¿Desea repetir? S/N\n")#pregunto al usuario si desea repetir
-  
+
+    def cifrados(self): 
+        repetir = "S"
+        while repetir == "s" or repetir == "S":
+            texto = input("Inserta tu texto: ")
+            n = 5
+            tipo=int(input("Ingrese el tipo de trabajo a realizar \n|1:Encriptar 2:Desencriptar|\ningrese numero\n")) 
+            abecedario = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+            cifrado = ''
+            texto = texto.upper()
+            for s in texto:
+                if s in abecedario:
+                    num = abecedario.find(s) 
+                    if tipo==1:
+                        num = num + n
+                    elif tipo==2:
+                        num = num - n
+                    if num >= len(abecedario):
+                        num = num - len(abecedario)
+                    elif num < 0:
+                        num = num + len(abecedario)
+                    cifrado = cifrado + abecedario[num]
+                else:
+                    cifrado = cifrado + s
+            print("el texto cifrado o descifrado es:\n",cifrado)
+            repetir = input("Desea ingresar una nueva cadena de texto? \nS/N\n ")
+            if repetir == "n" or repetir == "N":
+              print("*-gracias por usar el codigo cesar-*")
+              break 
+
+objetoCesar = cesar()
+objetoCesar.cifrados()
