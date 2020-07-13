@@ -1,7 +1,7 @@
 class temperaturas() :
-    #fecha=[]
-    #celcius=[]
-    #farenheit=[]
+    fecha=[]
+    celcius=[]
+    farenheit=[]
     arreglo=[] 
     
     
@@ -10,15 +10,19 @@ class temperaturas() :
         pass
         
     def leer(self):
-        
-        archivo= input("*Escribe el nombre del archivo:*\n========++++++++++++++++========\n") #se solicita el nombre del archivo para llamarlo
-        abrir= open(archivo, "r") #abre el archivo para leerlo
-        leer= abrir.read() #lee el archivo
-        print(leer) #lo imprime
+        archivo=open("temperaturas.txt","r")
+       
         
         for row in archivo:
             self.arreglo.append(int(row)) 
-   
+    
+    def convertir(self):
+      for row in self.arreglo:
+        celcius=float(input("ingresa tus temperaturas en celcius: "))
+        farenheit=(celcius*1.80)+32
+        print(farenheit)
+
+
     def imprimir(self):
         for row in self.arreglo:
             print(row)
@@ -32,12 +36,12 @@ class temperaturas() :
         
         
 
-#repetir="si"
+repetir="si"
 objeto=temperaturas() 
-#while repetir=="si":
-objeto.leer() 
-objeto.imprimir()
-objeto.promedio()
-#if repetir=="N" or repetir =="n":
-#objeto.promedio() 
-#repetir=input("desea repetir?" )
+while repetir=="si":
+  objeto.leer() 
+  objeto.imprimir()
+  objeto.convertir()
+  if repetir=="N" or repetir =="n":
+    objeto.promedio()
+  repetir=input("desea repetir?" )
