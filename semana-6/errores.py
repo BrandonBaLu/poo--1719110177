@@ -6,7 +6,6 @@ class errores() :#definí mi clase
        
     def operaciones(self) :#definí mi metodo para realizar todas las operaciones 
         lista=[]#declare mi variable global donde se guardaran los numeros ingresados 
-        print("******Bienvenido a esta tu app******")
         try:#evalúa los valores que el usuario ingrsa y devuelve una excepción 
             cantidad=int(input("¦**¿Cuantos numeros desea evaluar?:***¦ "))#pido al usuario cuantos valores desea ingresar 
             cont=0 #inicio mi contador en 0 para incrementar el valor de los números que desee evaluar el usuario 
@@ -36,6 +35,7 @@ class errores() :#definí mi clase
       
 objeto= errores()#igualó mi objeto 
 repetir ="s" 
+print("******Bienvenido a esta tu app******")
 while True:#mientras sea verdad la respuesta del usuario repetira el proceso de leer los valores que ingrese el usuario 
     if repetir == "S" or repetir =="s" :
         objeto.operaciones()#se ejecuta el metodo leer.
